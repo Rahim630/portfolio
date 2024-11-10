@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Rahim</a>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+<!-- Navigation links -->
+<a href="#" class="services-link">Services</a>
+<a href="#" class="skills-link">Skills</a>
+<a href="#" class="education-link">Education</a>
+<a href="#" class="experience-link">Experience</a>
+<a href="#" class="contact-link">Contact</a>
+
+<!-- Services Modal -->
+<div id="servicesModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+        <h2>Our Services</h2>
+        <p>As a skilled web developer, I offer a range of services to meet your digital needs. These include:
+            <ul>
+                <li>Frontend Development: Creating visually stunning and responsive websites using HTML, CSS, and JavaScript.</li>
+                <li>Backend Development: Building dynamic and database-driven websites using PHP and MySQL.</li>
+                <li>Web Application Development: Custom web solutions tailored to your business or personal needs.</li>
+                <li>Website Optimization: Ensuring fast, efficient, and scalable websites that provide excellent user experiences.</li>
+                <li>Consultation: Providing expert advice on best practices in web development and technology stack choices.</li>
+            </ul>
+        </p>
+    </div>
+</div>
+
+<!-- Skills Modal -->
+<div id="skillsModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+        <h2>Skills</h2>
+        <p>I am proficient in the following skills:
+            <ul>
+                <li><strong>HTML:</strong> Expertise in creating clean, semantic, and SEO-friendly markup.</li>
+                <li><strong>CSS:</strong> Mastery of creating responsive and visually appealing layouts using modern CSS frameworks and techniques.</li>
+                <li><strong>JavaScript:</strong> Strong knowledge of JavaScript, including frameworks like React and Vue.js, to create dynamic and interactive web pages.</li>
+                <li><strong>PHP:</strong> Building robust backend systems with PHP, including handling databases, form submissions, and more.</li>
+                <li><strong>MySQL:</strong> Database design, query optimization, and efficient data management for seamless backend operations.</li>
+            </ul>
+        </p>
+    </div>
+</div>
+
+<!-- Education Modal -->
+<div id="educationModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+        <h2>Education</h2>
+        <p>I hold a Diploma in Computer Science Engineering (CSE), which provided me with a strong foundation in software development, problem-solving, and technical proficiency. My coursework and projects enhanced my skills in programming, web development, and database management, which I apply in my work today.</p>
+    </div>
+</div>
+
+<!-- Experience Modal -->
+<div id="experienceModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+        <h2>Experience</h2>
+        <p>With hands-on experience in both frontend and backend development, I have worked on a variety of projects, from building responsive websites to developing complex web applications. I have collaborated with teams to deliver high-quality solutions and have consistently stayed updated on the latest web development trends and technologies. Some of my professional experience includes:
+            <ul>
+                <li>Developing websites and applications for clients in various industries.</li>
+                <li>Collaborating with cross-functional teams to build and maintain complex backend systems.</li>
+                <li>Implementing performance optimizations and security best practices to ensure high-quality, scalable solutions.</li>
+            </ul>
+        </p>
+    </div>
+</div>
+
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out via email or phone, or use the form to send a message directly.</p>
+            <ul>
+                <li><strong>Email:</strong> Rahimislam630@gmail.com</li>
+                <li><strong>Phone:</strong> (+880)-1635402606</li>
+                <li><strong>Location:</strong> Tongi, Gazipur, Bangladesh</li>
+            </ul>
+        </div>
+        <div class="contact-image">
+            <img src="son-goku.png" alt="Your Image">
+        </div>
+    </div>
+</div>
+
+<!-- Overlay for all modals -->
+   <div class="modal-overlay"></div>
+</nav>
+
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="son-goku.png" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Rahim</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Hello! I'm Rahim, a passionate web developer with a love for creating dynamic and visually engaging websites. With experience in front-end technologies like HTML, CSS, and JavaScript, I strive to deliver seamless user experiences and innovative web solutions. I enjoy learning new techniques and applying them to real-world projects to make an impact.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
