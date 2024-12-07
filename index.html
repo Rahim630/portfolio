@@ -1,110 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Rahim</a>
-
+    <header class="header">
+        <a href="#home" class="logo">Rahim</a>
         <nav>
-            <a href="#" class="active"> Home</a>
-<!-- Navigation links -->
-<a href="#" class="services-link">Services</a>
-<a href="#" class="skills-link">Skills</a>
-<a href="#" class="education-link">Education</a>
-<a href="#" class="experience-link">Experience</a>
-<a href="#" class="contact-link">Contact</a>
-
-<!-- Services Modal -->
-<div id="servicesModal" class="modal">
-    <span class="close">&times;</span>
-    <div class="modal-content">
-        <h2>Our Services</h2>
-        <p>As a skilled web developer, I offer a range of services to meet your digital needs. These include:
-            <ul>
-                <li>Frontend Development: Creating visually stunning and responsive websites using HTML, CSS, and JavaScript.</li>
-                <li>Backend Development: Building dynamic and database-driven websites using PHP and MySQL.</li>
-                <li>Web Application Development: Custom web solutions tailored to your business or personal needs.</li>
-                <li>Website Optimization: Ensuring fast, efficient, and scalable websites that provide excellent user experiences.</li>
-                <li>Consultation: Providing expert advice on best practices in web development and technology stack choices.</li>
-            </ul>
-        </p>
-    </div>
-</div>
-
-<!-- Skills Modal -->
-<div id="skillsModal" class="modal">
-    <span class="close">&times;</span>
-    <div class="modal-content">
-        <h2>Skills</h2>
-        <p>I am proficient in the following skills:
-            <ul>
-                <li><strong>HTML:</strong> Expertise in creating clean, semantic, and SEO-friendly markup.</li>
-                <li><strong>CSS:</strong> Mastery of creating responsive and visually appealing layouts using modern CSS frameworks and techniques.</li>
-                <li><strong>JavaScript:</strong> Strong knowledge of JavaScript, including frameworks like React and Vue.js, to create dynamic and interactive web pages.</li>
-                <li><strong>PHP:</strong> Building robust backend systems with PHP, including handling databases, form submissions, and more.</li>
-                <li><strong>MySQL:</strong> Database design, query optimization, and efficient data management for seamless backend operations.</li>
-            </ul>
-        </p>
-    </div>
-</div>
-
-<!-- Education Modal -->
-<div id="educationModal" class="modal">
-    <span class="close">&times;</span>
-    <div class="modal-content">
-        <h2>Education</h2>
-        <p>I hold a Diploma in Computer Science Engineering (CSE), which provided me with a strong foundation in software development, problem-solving, and technical proficiency. My coursework and projects enhanced my skills in programming, web development, and database management, which I apply in my work today.</p>
-    </div>
-</div>
-
-<!-- Experience Modal -->
-<div id="experienceModal" class="modal">
-    <span class="close">&times;</span>
-    <div class="modal-content">
-        <h2>Experience</h2>
-        <p>With hands-on experience in both frontend and backend development, I have worked on a variety of projects, from building responsive websites to developing complex web applications. I have collaborated with teams to deliver high-quality solutions and have consistently stayed updated on the latest web development trends and technologies. Some of my professional experience includes:
-            <ul>
-                <li>Developing websites and applications for clients in various industries.</li>
-                <li>Collaborating with cross-functional teams to build and maintain complex backend systems.</li>
-                <li>Implementing performance optimizations and security best practices to ensure high-quality, scalable solutions.</li>
-            </ul>
-        </p>
-    </div>
-</div>
-
-
-<!-- Contact Modal -->
-<div id="contactModal" class="modal">
-    <span class="close">&times;</span>
-    <div class="contact-container">
-        <div class="contact-info">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out via email or phone, or use the form to send a message directly.</p>
-            <ul>
-                <li><strong>Email:</strong> Rahimislam630@gmail.com</li>
-                <li><strong>Phone:</strong> (+880)-1635402606</li>
-                <li><strong>Location:</strong> Tongi, Gazipur, Bangladesh</li>
-            </ul>
+            <a href="#home" class="active">Home</a>
+            <a href="#services" class="services-link">Services</a>
+            <a href="#skills-section" class="skills-link">Skills</a>
+            <a href="#education" class="education-link">Education</a>
+            <a href="#" class="experience-link">Experience</a>
+            <a href="#contact" class="contact-link">Contact</a>
+        </nav>
+       <!-- New Hamburger Icon -->
+        <div id="nav-icon4">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="contact-image">
-            <img src="son-goku.png" alt="Your Image">
-        </div>
-    </div>
-</div>
-
-<!-- Overlay for all modals -->
-   <div class="modal-overlay"></div>
-</nav>
-
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-img">
             <img src="son-goku.png" alt="">
         </div>
@@ -121,6 +44,184 @@
             <a href="#" class="btn">Hire me</a>
         </div>
     </section>
+    
+    
+     <section class="About-Me">
+        <div class="Me">
+            <h1>About <span>Me</span></h1>
+            <div class="underline"></div>
+            <div class="underline2"></div>
+            <h3>Designing Is My Passion</h3>
+            <p>Hi, I’m Rahim, a passionate and dedicated web developer with a love for crafting dynamic and visually captivating websites. From creating sleek, responsive designs with HTML, CSS, and JavaScript to building robust backend systems using PHP and MySQL, I specialize in delivering tailored web solutions that meet both creative and functional requirements.
+               
+               <br> I thrive on solving challenges and bringing innovative ideas to life, ensuring every project reflects the unique needs of the client. With a strong foundation in Computer Science Engineering, my journey has been fueled by continuous learning and a commitment to staying ahead of the latest web development trends.<br>
+                
+                <span>Let’s collaborate to transform your vision into a seamless and impactful digital experience. </span></p>
+        </div>
+        <button>Download CV</button>
+     </section>
+
+        <section class="services" id="services">
+            <h2 class="heading">Services <span>:</span></h2>
+            <div class="services-container">
+              <div class="services-box">
+                  <div class="services-info">
+                      <h4>Frontend Development</h4>
+                      <p>Creating visually stunning and responsive websites using HTML, CSS, and JavaScript.</p>
+                  </div>
+              </div>
+              <div class="services-box">
+                  <div class="services-info">
+                      <h4>Backend Development</h4>
+                      <p>Building dynamic and database-driven websites using PHP and MySQL</p>
+                  </div>
+              </div>
+              <div class="services-box">
+                  <div class="services-info">
+                      <h4>Web Application Development</h4>
+                      <p>Custom web solutions tailored to your business or personal needs.</p>
+                  </div>
+              </div>
+              <div class="services-box">
+                  <div class="services-info">
+                      <h4>Consultation</h4>
+                      <p>Providing expert advice on best practices in web development and technology stack choices</p>
+                  </div>
+              </div>
+            </div>
+          </section>
+
+     </section>
+     <section class="skills-section" id="skills-section">
+        <div class="skills-content">
+            <div class="text-content">
+                <h1>My <span>Skills</span> :</h1>
+                <div class="underline"></div>
+                <div class="underline2"></div>
+                <p>
+                    Skills Reflects Our Knowledge<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus natus tenetur tempora? 
+                    Quasi, rem quas omnis. Porro rem aspernatur reiciendis ut praesentium minima ad, quos, officia!
+                    Illo libero, et, distinctio repellat sed nesciunt est modi quaerat placeat. Quod molestiae, alias?
+                </p>
+                <div class="experience">
+                    <h2>1</h2>
+                    <p>Years Of <br>Experience</p>
+                </div>
+            </div>
+            <div class="skills-list">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <p>90%</p>
+                </div>
+                <div class="skills">
+                    <h3>CSS</h3>
+                    <p>80%</p>
+                </div>
+                <div class="skills">
+                    <h3>JavaScript</h3>
+                    <p>70%</p>
+                </div>
+                <div class="skill">
+                    <h3>PHP</h3>
+                    <p>60%</p>
+                </div>
+                <div class="skill">
+                    <h3>MySQL</h3>
+                    <p>90%</p>
+                </div>
+                <div class="skills">
+                    <h3>Node.Js</h3>
+                    <p>50%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Education</span> :</h2>
+        <div class="timeline">
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Internship</h2>
+                    </div>
+                    <div class="decs">
+                        <p>Communication IT</p>
+                        <p>I completed my internship at Communication IT, where I gained hands-on experience in the field, further enhancing my technical skills.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <div class="tag">
+                        <h2>University</h2>
+                    </div>
+                    <div class="decs">
+                        <p>Uttara Engineering College</p>
+                        <p>I hold a Diploma in Computer Science Engineering (CSE) from Uttara Engineering College, providing me with a strong foundation in software development, problem-solving, and technical proficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h2>School</h2>
+                    </div>
+                    <div class="decs">
+                        <p>S.S Model School & College</p>
+                        <p>I completed my schooling at S.S Model School & College, where I developed the initial academic groundwork for my future education and career.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2 class="headings">Contact <span>Me</span> :</h2>
+        <form action="send_email.php" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" id="name" placeholder="Name" required autocomplete="name">
+                <input type="email" name="email" id="email" placeholder="Email" required autocomplete="email">
+                <input type="tel" name="phone" id="phone" placeholder="Phone Number" required autocomplete="tel">
+                <input type="text" name="subject" id="subject" placeholder="Subject" autocomplete="off">
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required autocomplete="off"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        
+
+        <!-- Contact Info Sidebar -->
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out via email or phone, or use the form to send a message directly.</p>
+            <ul>
+                <li><strong>Email:</strong> Rahimislam630@gmail.com</li>
+                <li><strong>Phone:</strong> (+880) 1635402606</li>
+                <li><strong>Location:</strong> Tongi, Gazipur, Bangladesh</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policis</a></li>
+        </ul>
+        <p class="copyright">
+            © Rahim Coder  | All Right Reserved 
+        </p>
+    </footer>
+    <!-- External JS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

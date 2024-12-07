@@ -1,32 +1,26 @@
-const modals = {
-    services: document.getElementById("servicesModal"),
-    skills: document.getElementById("skillsModal"),
-    education: document.getElementById("educationModal"),
-    experience: document.getElementById("experienceModal"),
-    contact: document.getElementById("contactModal")
-};
+const navIcon = document.getElementById("nav-icon4");
+const nav = document.querySelector("nav");
 
-const overlay = document.querySelector(".modal-overlay");
-
-// Function to open a specific modal
-function openModal(modal) {
-    modal.classList.add("active");
-    overlay.classList.add("active");
+// Function to close the navigation menu
+function closeNav() {
+  nav.classList.remove("active");
+  navIcon.classList.remove("open");
 }
 
-// Function to close all modals
-function closeModals() {
-    Object.values(modals).forEach(modal => modal.classList.remove("active"));
-    overlay.classList.remove("active");
-}
+// Toggle navigation menu and icon animation on click
+navIcon.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  navIcon.classList.toggle("open");
+});
 
-// Event listeners for opening modals
-document.querySelector(".services-link").onclick = () => openModal(modals.services);
-document.querySelector(".skills-link").onclick = () => openModal(modals.skills);
-document.querySelector(".education-link").onclick = () => openModal(modals.education);
-document.querySelector(".experience-link").onclick = () => openModal(modals.experience);
-document.querySelector(".contact-link").onclick = () => openModal(modals.contact);
+// Close nav when any nav link is clicked
+document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", closeNav);
+});
 
-// Event listeners for closing modals
-overlay.onclick = closeModals;
-document.querySelectorAll(".close").forEach(button => button.onclick = closeModals);
+// Close nav when clicking outside of it
+document.addEventListener("click", (e) => {
+  if (!nav.contains(e.target) && !navIcon.contains(e.target)) {
+    closeNav();
+  }
+});
