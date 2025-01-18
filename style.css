@@ -1000,8 +1000,7 @@ button:hover {
         grid-template-columns: 1fr; 
         align-items: start; 
         gap: 2.5rem; 
-        max-width: 1200px; 
-        overflow: hidden; 
+        max-width: 1200px;
     }
 
     .services-info h4 {
