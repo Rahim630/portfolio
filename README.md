@@ -31,7 +31,8 @@ Replace ./path/to/your/screenshot.png with the actual path of your screenshot in
 
 **Installation**
 
-*Clone the repository: https://github.com/Rahim630/portfolio-website.git 
+*Clone the repository: 
+https://rahim630.github.io/portfolio/ 
 
 *Navigate to the project folder: cd portfolio-website
 Open index.html in your browser to preview.
